@@ -121,7 +121,7 @@
         // |         |         |          |         |      |   | Home |    {    |     }    |    (    |     )   |
         // |         |         |          |         |      |   | Left |  Down   |    Up    |  Right  |   End   |
         // |         |         |          |         |      |   | End  |    [    |     ]    |    <    |     >   |
-        //                                |         |      |   |      |         |
+        //                                |         |      |   |      |   Bspc  |
 
         nav {
             display-name = "Navigation";
@@ -129,7 +129,7 @@
 &trans  &trans  &trans  &trans  &trans    &kp HOME  &kp LBRC  &kp RBRC  &kp LPAR   &kp RPAR
 &trans  &trans  &trans  &trans  &trans    &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT  &kp END
 &trans  &trans  &trans  &trans  &trans    &kp END   &kp LBKT  &kp RBKT  &kp LT     &kp GT
-                        &trans  &trans    &trans    &trans
+                        &trans  &trans    &kp SPACE &kp BSPC
             >;
         };
 
