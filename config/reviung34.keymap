@@ -128,7 +128,7 @@
 &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS   &kp ASTRK  &kp GRAVE  &kp TILDE
 &trans    &trans  &trans    &trans    &trans       &kp MINUS  &kp EQUAL  &trans     &kp SQT    &kp DQT
 &trans    &trans  &trans    &trans    &trans       &kp UNDER  &kp PLUS   &trans     &kp PIPE   &kp BSLH
-                            &trans    &trans       &trans     &kp BSP
+                            &trans    &trans       &trans     &kp BSPC
             >;
         };
 
