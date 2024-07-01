@@ -95,7 +95,7 @@
             display-name = "Base";
             bindings = <
 &kp Q        &kp W       &kp E        &kp R        &kp T            &kp Y         &kp U         &kp I        &kp O       &kp P
-&mt LGUI A   &mt LALT S  &mt LCTRL D  &mt LSHFT F  &kp G            &kp H         &mt RGUI J    &mt RCTRL K  &mt RALT L  &mt RSHFT SEMI
+&mt LGUI A   &mt LALT S  &mt LCTRL D  &mt LSHFT F  &kp G            &kp H         &mt RSHFT J   &mt RCTRL K  &mt RALT L  &mt RGUI SEMI
 &kp Z        &kp X       &kp C        &kp V        &kp B            &kp N         &kp M         &kp COMMA    &kp DOT     &kp SLASH
                                       &lt NAV TAB  &lt SYM RET      &lt NUM SPACE &lt FUN BSPC
             >;
@@ -113,7 +113,7 @@
 &trans  &trans  &trans  &trans  &trans    &kp HOME  &kp LBRC  &kp RBRC  &kp LPAR   &kp RPAR
 &trans  &trans  &trans  &trans  &trans    &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT  &kp END
 &trans  &trans  &trans  &trans  &trans    &kp END   &kp LBKT  &kp RBKT  &kp LT     &kp GT
-                        &trans  &trans    &kp SPACE &kp BSPC
+                        &trans  &trans    &kp SPACE &kp DEL
             >;
         };
 
@@ -128,7 +128,7 @@
 &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS   &kp ASTRK  &kp GRAVE  &kp TILDE
 &trans    &trans  &trans    &trans    &trans       &kp MINUS  &kp EQUAL  &trans     &kp SQT    &kp DQT
 &trans    &trans  &trans    &trans    &trans       &kp UNDER  &kp PLUS   &trans     &kp PIPE   &kp BSLH
-                            &trans    &trans       &trans     &kp DEL
+                            &trans    &trans       &trans     &kp BSP
             >;
         };
 
