@@ -21,6 +21,10 @@
     bindings = <&kp>, <&kp>;
 };
 
+&caps_word {
+    continue-list = <UNDERSCORE MINUS BSPC>;
+};
+
 / {
     chosen {
         // 34 keys.
@@ -122,7 +126,7 @@
         // ---------------------------------------------------------------------------------------------------
         // |    !    |    @    |    #     |    $    |  %  |   |  ^  |    &    |    *     |    `    |    ~    |
         // |         |         |          |         |     |   |  -  |    =    |          |    '    |    "    |
-        // |         |         |          |         |     |   |  _  |    +    |          |    |    |    \    |
+        // |   c-z   |   c-x   |   c-c    |   c-v   |     |   |  _  |    +    |          |    |    |    \    |
         //                                |         |     |   |     |   DEL   |
 
         nav {
@@ -130,7 +134,7 @@
             bindings = <
 &trans  &trans  &trans  &trans  &trans    &kp HOME  &kp LBRC  &kp RBRC  &kp LPAR   &kp RPAR
 &trans  &trans  &trans  &trans  &trans    &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT  &kp END
-&trans  &trans  &trans  &trans  &trans    &kp END   &kp LBKT  &kp RBKT  &kp LT     &kp GT
+&LC(Z)  &LC(X)  &LC(C)  &LC(V)  &trans    &kp END   &kp LBKT  &kp RBKT  &kp LT     &kp GT
                         &trans  &trans    &kp SPACE &kp DEL
             >;
         };
