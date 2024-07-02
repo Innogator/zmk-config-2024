@@ -34,6 +34,18 @@
 };
 
 / {
+
+    macros {
+        // sometimes my device thinks a modifier is being held down
+        // pressing all modifiers fixes it.
+        unstick: unstick {
+                label = "ZM_unstick";
+                compatible = "zmk,behavior-macro";
+                #binding-cells = <0>;
+                bindings
+                        = <&kp LSHIFT &kp RSHIFT &kp LCTRL &kp RCTRL &kp LALT &kp RALT &kp LGUI &kp RGUI>;
+        };
+    };
     combos {
         compatible = "zmk,combos";
 
@@ -57,10 +69,16 @@
             bindings = <&kp LGUI>;
         };
 
-        combo_caps {
+        combo_caps_word {
             timeout-ms = <50>;
             key-positions = <20 29>; // Z/
             bindings = <&caps_word>;
+        };
+
+        combo_caps {
+            timeout-ms = <50>;
+            key-positions = <10 19>; // A;
+            bindings = <&kp CAPS>;
         };
 
         /*
@@ -149,7 +167,7 @@
         };
 
         // ---------------------------------------------------------------------------------------------------
-        // |         |         |          |         |     |   | printscreen |   F1  |   F2    |   F3     |   F4    |
+        // | unstick |         |          |         |     |   | printscreen |   F1  |   F2    |   F3     |   F4    |
         // |         |         |          |         |     |   |             |   F5  |   F6    |   F7     |   F8    |
         // |         |         |          |         |     |   |     mute    |   F9  |   F10   |   F11    |   F12   |
         //                                |         |     |   |             |       |
@@ -157,9 +175,9 @@
         func {
             display-name = "Function";
             bindings = <
-&trans  &trans  &trans  &trans  &trans    &kp PSCRN  &kp F1  &kp F2   &kp F3   &kp F4
-&trans  &trans  &trans  &trans  &trans    &trans     &kp F5  &kp F6   &kp F7   &kp F8
-&trans  &trans  &trans  &trans  &trans    &kp C_MUTE &kp F9  &kp F10  &kp F11  &kp F12
+&unstick  &trans  &trans  &trans  &trans    &kp PSCRN  &kp F1  &kp F2   &kp F3   &kp F4
+&trans    &trans  &trans  &trans  &trans    &trans     &kp F5  &kp F6   &kp F7   &kp F8
+&trans    &trans  &trans  &trans  &trans    &kp C_MUTE &kp F9  &kp F10  &kp F11  &kp F12
                         &trans  &trans    &trans  &trans
             >;
         };
